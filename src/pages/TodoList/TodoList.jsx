@@ -50,7 +50,9 @@ const TodoList = React.memo(
       <>
         <div className="flex flex-col p-4">
           <p className="text-rose-500 text-sm font-serif ">* 番茄鐘僅能在 {">"} 640 px 螢幕下可使用</p>
-          <p className="text-rose-500 text-sm font-serif ">* 本頁面特點在拖拉式 todo 清單及重整不會重置的番茄鐘</p>
+          <p className="text-rose-500 text-sm font-serif ">* 本頁面特點在拖拉式 todo 清單及重整
+          
+          不會重置的番茄鐘</p>
           <div className="flex sm:flex-1 gap-4 overflow-x-auto flex-col sm:flex-row mt-4">
             <DragDropContext onDragEnd={(result) => onDragEnd(result)}>
               {Object.entries(tasks).map(([columnId, column]) => {
