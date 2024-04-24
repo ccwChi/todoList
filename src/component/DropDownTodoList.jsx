@@ -130,14 +130,12 @@ const DropdownTodoList = React.memo(() => {
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="flex justify-around items-center">
                   <input
+                  placeholder="新建任務 (Enter)"
                     className="w-[120px] text-gray-900 ps-2 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600"
                     {...register("title", { required: true })}
                     defaultValue=""
                   />
-                  <Button type="submit" className=" !bg-transparent">
-                    <FaPlus className=" cursor-pointer " size={8} />
-                    {/* <span className="text-sm">新增</span> */}
-                  </Button>
+                
                 </div>
               </form>
             </ul>
